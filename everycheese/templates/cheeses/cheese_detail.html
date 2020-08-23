@@ -6,6 +6,10 @@
 
 <h2>{{ cheese.name }}</h2>
 
+<p>
+    <a href="{% url 'cheeses:update' cheese.slug %}">Update</a>
+</p>
+
 {% if cheese.firmness %}
     <p>Firmness: {{cheese.get_firmness_display }}</p>
 {% endif %}
