@@ -8,9 +8,9 @@ from ..models import Cheese
 
 def test__str__():
     cheese = Cheese.objects.create(
-        name='Stracchino',
+        name="Stracchino",
         description="Semi-sweet cheese that goes well with starches.",
-        firmness=Cheese.Firmness.SOFT
+        firmness=Cheese.Firmness.SOFT,
     )
 
     assert cheese.__str__() == "Stracchino"
