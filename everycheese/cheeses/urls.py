@@ -4,7 +4,6 @@ from . import views
 app_name = "cheeses"
 urlpatterns = [
     path(route="", view=views.CheeseListView.as_view(), name="list"),
-    path(
-        route="<slug:slug>",
-        view=views.CheeseDetailView.as_view(), name="detail"),
+    path(route="add/new/", view=views.CheeseCreateView.as_view(), name="add"),
+    path(route="<slug:slug>/", view=views.CheeseDetailView.as_view(), name="detail"),
 ]
