@@ -89,4 +89,4 @@ def test_cheese_create_form_valid(client, user):
     assert cheese.description == form_data['description']
     assert cheese.firmness == Cheese.Firmness.HARD
     assert cheese.country_of_origin == form_data['country_of_origin']
-    assert cheese.creator == user
+    assert cheese.creator == user 
