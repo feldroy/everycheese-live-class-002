@@ -21,6 +21,15 @@
     </p>
 {% endif %}
 
+<hr>
+
+<h3>Submitted by</h3>
+
+    <a href="{% url 'users:detail' cheese.creator.username %}">{{ cheese.creator.username }}</a>
+
+    {% if cheese.creator.name %}
+        <p>{{ cheese.creator.name }}</p>
+    {% endif %}
 
 
 
