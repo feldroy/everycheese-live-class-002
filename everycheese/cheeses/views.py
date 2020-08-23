@@ -8,3 +8,7 @@ class CheeseListView(ListView):
 
     # def get_queryset(self):
     #     return Cheese.objects.filter(firmness=Cheese.Firmness.SEMI_HARD)
+
+
+class CheeseDetailView(DetailView):
+    model = Cheese
