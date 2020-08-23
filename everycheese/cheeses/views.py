@@ -1,3 +1,10 @@
-from django.shortcuts import render
+from django.views.generic import ListView, DetailView
 
-# Create your views here.
+from .models import Cheese
+
+
+class CheeseListView(ListView):
+    model = Cheese
+
+    # def get_queryset(self):
+    #     return Cheese.objects.filter(firmness=Cheese.Firmness.SEMI_HARD)
