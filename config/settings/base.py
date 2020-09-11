@@ -50,7 +50,8 @@ DATABASES = {
     # expect a value in the following format:
     # DATABASE_URL=postgres://user:password@hostname_or_ip:port/database_name
     "default": env.db(
-        "DATABASE_URL", default="postgres://myuser:mypasswd@localhost:5432/everycheese"
+        "DATABASE_URL",
+        default="postgres://myuser:mypasswd@localhost:5432/everycheese"
     )
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
